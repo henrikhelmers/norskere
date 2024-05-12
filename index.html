@@ -1,0 +1,33 @@
+---
+layout: default
+title: Home
+---
+
+<img src="/public/tavle.jpg" width="2000" height="976" alt="Hannah foran en tavle">
+
+<div class="posts">
+  {% for post in site.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+    {% if post.excerpt %}
+      {{ post.excerpt }}
+    {% else %}
+    <p>
+      {{ post.content | strip_html | truncatewords: 30 }}
+    </p>
+    {% endif %}
+    <p>
+      <a href="{{ post.url }}">
+        Les mer...
+      </a>
+    </p>
+
+  </div>
+  {% endfor %}
+</div>
