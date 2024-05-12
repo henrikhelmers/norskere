@@ -24,7 +24,7 @@ url: https://norskere.no
 name: Norskere
 description: Learn more about the Norwegian language
 incremental: true
-safe: false
+safe: true
 # destination: ~/web/norskere.no
 
 
@@ -35,7 +35,7 @@ safe: false
 
 liquid:
   strict_filters    : true
-  strict_variables  : false
+  strict_variables  : true
 
 
 # https://jch.penibelst.de
@@ -59,11 +59,6 @@ markdown: kramdown
 
 emptyArray: []
 
-plugins:
-  - jekyll-feed
-  - jekyll-paginate
-
 exclude:
-  - rakefile
   - Gemfile
   - Gemfile.lock
