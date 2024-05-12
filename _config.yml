@@ -24,7 +24,7 @@ url: https://norskere.no
 name: Norskere
 description: Learn more about the Norwegian language
 incremental: true
-safe: true
+safe: false
 # destination: ~/web/norskere.no
 
 
@@ -33,21 +33,12 @@ safe: true
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
+author: Hannah Helmers
+
 liquid:
   strict_filters    : true
   strict_variables  : true
 
-
-# https://jch.penibelst.de
-compress_html:
-  clippings: all
-  comments: all
-  startings: all
-  endings: all
-  ignore:
-    envs: []
-  blanklines: false
-  profile: false
 
 tag_path: /
 
