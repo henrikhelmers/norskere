@@ -1,8 +1,6 @@
 ---
 title: When grammar changes a vowel within a noun
 date: 2016-10-09T15:18:19+02:00
-author: Hannah
-layout: post
 tags:
   - dialects
   - nouns

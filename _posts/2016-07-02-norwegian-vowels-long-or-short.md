@@ -1,8 +1,6 @@
 ---
 title: 'Norwegian vowels—long or short?'
 date: 2016-07-02T14:00:07+02:00
-author: Hannah
-layout: post
 tags:
   - pronunciation
   - vowels

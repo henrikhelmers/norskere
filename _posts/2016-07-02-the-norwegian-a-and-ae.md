@@ -1,8 +1,6 @@
 ---
 title: The Norwegian A and Æ
 date: 2016-07-02T22:20:18+02:00
-author: Hannah
-layout: post
 tags:
   - pronunciation
   - vowels

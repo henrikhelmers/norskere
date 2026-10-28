@@ -1,8 +1,6 @@
 ---
 title: '«Bilen min» or «min bil»? The placement of the possessive pronoun.'
 date: 2014-03-02T17:14:52+01:00
-author: Hannah
-layout: post
 tags:
   - pronouns
 ---

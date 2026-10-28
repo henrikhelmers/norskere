@@ -1,8 +1,6 @@
 ---
 title: Bokmål, nynorsk, and the Norwegian dialects
 date: 2016-06-30T21:13:36+02:00
-author: Hannah
-layout: post
 tags:
   - dialects
 ---

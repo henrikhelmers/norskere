@@ -1,8 +1,6 @@
 ---
 title: Two or three genders?
 date: 2014-03-15T20:36:57+01:00
-author: Hannah
-layout: post
 tags:
   - nouns
 ---

@@ -1,8 +1,6 @@
 ---
 title: 'Tonemes—or why Norwegians sound like they are singing'
 date: 2014-02-14T23:37:06+01:00
-author: Hannah
-layout: post
 tags:
   - pronunciation
 ---

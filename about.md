@@ -1,7 +1,5 @@
 ---
 title: About
-date: 2014-03-02T17:36:14+01:00
-author: Hannah
 layout: page
 ---
 

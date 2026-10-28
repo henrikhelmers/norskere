@@ -1,9 +1,6 @@
 ---
-id: 116
 title: Pronouncing the Norwegian O
 date: 2016-08-08T17:23:02+02:00
-author: Hannah
-layout: post
 tags:
   - pronunciation
 ---

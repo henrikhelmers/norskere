@@ -1,8 +1,6 @@
 ---
 title: The pronunciation of rs, rn, rt, rd and rl
 date: 2013-12-08T18:11:37+01:00
-author: Hannah
-layout: post
 tags:
   - consonants
   - pronunciation
