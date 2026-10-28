@@ -8,8 +8,6 @@ liquid:
   strict_filters: true
   strict_variables: true
 
-tag_path: /
-
 sass:
   style: compressed
 
@@ -20,3 +18,8 @@ defaults:
       path: _posts
     values:
       layout: post
+  - scope:
+      path: tags
+    values:
+      layout: tag_index
+      permalink: /:basename/
