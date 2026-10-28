@@ -8,9 +8,6 @@ liquid:
   strict_filters: true
   strict_variables: true
 
-sass:
-  style: compressed
-
 markdown: kramdown
 
 defaults:
