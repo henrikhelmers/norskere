@@ -1,7 +1,7 @@
 <div class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      <img src="public/logo.png">
+      <img src="/public/logo.png" alt="">
       <h1>
         <a href="/">
           {{ site.title }}
@@ -32,6 +32,6 @@
 
     </nav>
 
-    <p>&copy; {{ site.time | date: '%Y' }} Hannah Helmers</p>
+    <p>&copy; {{ site.time | date: '%Y' }} {{ site.author }}</p>
   </div>
 </div>
