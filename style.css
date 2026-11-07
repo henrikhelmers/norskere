@@ -6,12 +6,15 @@
   --brand: #542cb7;
 }
 
+@font-face { font-family: Fraunces; src: url(/public/Fraunces--latin_basic.woff2); unicode-range: U+0000-00FF; }
+@font-face { font-family: Fraunces; src: url(/public/Fraunces--latin_ext.woff2); unicode-range: U+0100-024F; }
+
 *, ::before, ::after {
   box-sizing: border-box;
 }
 
 html {
-  font: 16px/1.5 "PT Sans", Helvetica, Arial, sans-serif;
+  font: 16px/1.5 system-ui, sans-serif;
   text-size-adjust: 100%;
 
   @media (min-width: 38em) { font-size: 20px; }
@@ -94,7 +97,7 @@ img {
 
   h1 {
     margin-top: 0;
-    font: 2rem "Abril Fatface", serif;
+    font: 2rem Fraunces, serif;
   }
 
   @media (min-width: 48em) {
