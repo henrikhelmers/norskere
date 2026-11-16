@@ -1,13 +1,13 @@
 :root {
   --text: #515151;
   --heading: #303030;
-  --muted: #9a9a9a;
+  --muted: #737373;
   --border: #eee;
   --brand: #542cb7;
 }
 
-@font-face { font-family: Fraunces; src: url(/public/Fraunces--latin_basic.woff2); unicode-range: U+0000-00FF; }
-@font-face { font-family: Fraunces; src: url(/public/Fraunces--latin_ext.woff2); unicode-range: U+0100-024F; }
+@font-face { font-family: Fraunces; font-display: swap; src: url(/public/Fraunces--latin_basic.woff2); unicode-range: U+0000-00FF; }
+@font-face { font-family: Fraunces; font-display: swap; src: url(/public/Fraunces--latin_ext.woff2); unicode-range: U+0100-024F; }
 
 *, ::before, ::after {
   box-sizing: border-box;
@@ -15,6 +15,7 @@
 
 html {
   font: 16px/1.5 system-ui, sans-serif;
+  -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
 
   @media (min-width: 38em) { font-size: 20px; }
@@ -63,7 +64,7 @@ hr {
 code {
   padding: .25em .5em;
   font: 85% Menlo, Monaco, monospace;
-  color: #bf616a;
+  color: #b0414c;
   background: #f9f9f9;
   border-radius: 3px;
 }
@@ -90,10 +91,12 @@ img {
 .sidebar {
   padding: 2rem 1rem;
   text-align: center;
-  color: rgb(255 255 255 / .5);
+  color: rgb(255 255 255 / .75);
   background: var(--brand);
 
   a { color: #fff; }
+
+  img { margin-inline: auto; }
 
   h1 {
     margin-top: 0;
@@ -104,19 +107,33 @@ img {
     position: fixed;
     inset: 0 auto 0 0;
     width: 18rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
     text-align: left;
+
+    > .container {
+      display: flex;
+      flex: 1 0 auto;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    img { margin-inline: 0; }
   }
 }
 
-.sidebar-sticky {
-  @media (min-width: 48em) {
-    position: absolute;
-    inset: auto 1rem 1rem;
-  }
+.sidebar-footer {
+  margin-top: auto;
+
+  p { margin-bottom: 0; }
 }
 
 .sidebar-nav {
   margin-bottom: 1rem;
+}
+.sidebar-nav-group + .sidebar-nav-group {
+  margin-top: 1.5rem;
 }
 .sidebar-nav-item {
   display: block;
@@ -142,6 +159,16 @@ img {
 }
 .page-title, .post-title {
   margin-top: 0;
+  font-size: 2rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 .post-date {

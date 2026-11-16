@@ -2,7 +2,8 @@
   <meta charset="utf-8">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#7955ff">
+  <meta name="theme-color" content="#542cb7">
+  <meta name="description" content="{% if page.layout == "post" %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <title>
     {% if page.title == "Home" %}
@@ -14,8 +15,11 @@
 
   <link rel="stylesheet" href="/style.css">
 
-  <link rel="shortcut icon" href="/public/favicon.ico">
-  <link rel="mask-icon" href="/public/favicon.svg" color="#7955ff">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+  <link rel="icon" href="/public/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/public/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/public/apple-touch-icon-144-precomposed.png">
 
   <link rel="alternate" type="application/atom+xml" title="Atom" href="/atom.xml">
 </head>
